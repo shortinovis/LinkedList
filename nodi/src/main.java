@@ -1,13 +1,12 @@
-import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.util.Scanner;
 
-public class Main {
+public class main {
     public static void main(String[] args) throws IOException {
         Scanner t = new Scanner(System.in);
         int opzione;
 
+        LinkedList<Object> list=new LinkedList<>();
         do {
             System.out.println("scegli  opzione:");
             System.out.println("1-Aggiunta nodo in testa");
@@ -21,18 +20,19 @@ public class Main {
             switch (opzione) {
                 case 1:
 
+                    list.add(12);
 
                     break;
                 case 2:
-
+                    list.addInCoda(32);
 
                     break;
                 case 3:
-
+                    list.addPos(2,2);
 
                     break;
                 case 4:
-
+                    list.addBeforeElement(2,4);
 
                     break;
 
